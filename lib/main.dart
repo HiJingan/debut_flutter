@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-// 第二章
 import 'package:debut_flutter/chapter_02/2.1_counter/counter.dart';
+import 'package:debut_flutter/pages/default_page.dart';
 
 // 应用入口
 // Flutter应用中使用main函数作为程序的入口
@@ -21,7 +21,16 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Counter(title: 'Debut Flutter'),
+      home: _renderSpecifiedHome('2.1'),
     );
+  }
+
+  _renderSpecifiedHome(String chapter) {
+    switch (chapter) {
+      case '2.1':
+        return Counter(title: 'Debut Flutter');
+      default:
+        return DefaultPage();
+    }
   }
 }
