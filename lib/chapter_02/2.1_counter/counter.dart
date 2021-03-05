@@ -1,3 +1,5 @@
+// Flutter官方第一个例子————计数器
+
 // 导入Material UI组件库，Flutter默认提供了一套丰富的Material风格的UI组件
 // Material是一套标准的移动端和web端的视觉设计语言，官网：https://material.io/design
 import 'package:flutter/material.dart';
@@ -39,7 +41,7 @@ class _CounterState extends State<Counter> {
           mainAxisAlignment: MainAxisAlignment.center, // 垂直方向居中
           children: <Widget>[
             Text(
-              'You have pushed the button this many times:',
+              '当前您点击按钮总次数',
             ),
             Text(
               '$_counter',
