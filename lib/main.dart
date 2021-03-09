@@ -6,6 +6,7 @@ import 'package:debut_flutter/chapter_02/2.1_counter/counter.dart';
 import 'package:debut_flutter/chapter_02/2.2_route_management/route_management.dart';
 import 'package:debut_flutter/chapter_03/3.3_text/text_demo.dart';
 import 'package:debut_flutter/chapter_03/3.4_button/button_demo.dart';
+import 'package:debut_flutter/chapter_03/3.5_image_and_icon/image_and_icon.dart';
 
 // demos
 import 'package:debut_flutter/demos/01_wechat_reader/reader_navigator.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: _renderSpecifiedHome('chapter_3.4'),
+      home: _renderSpecifiedHome('chapter_3.5'),
       // 注册路由表
       // routes: {'/': (context) => _renderSpecifiedHome('chapter_3.3')},
     );
@@ -42,6 +43,7 @@ class MyApp extends StatelessWidget {
    * chapter_2.2               路由管理
    * chapter_3.3               文本及样式
    * chapter_3.4               按钮
+   * chapter_3.5               图片和icon
    *
    * demo_01_wechat_reader     微信读书简易版示例，导航组件与对应的页面卡片同步切换
    */
@@ -55,6 +57,8 @@ class MyApp extends StatelessWidget {
         return TextDemo();
       case 'chapter_3.4':
         return ButtonDemo();
+      case 'chapter_3.5':
+        return ImageAndIcon();
       case 'demo_01_wechat_reader':
         return ReaderNavigator();
       default:
