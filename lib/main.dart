@@ -8,6 +8,8 @@ import 'package:debut_flutter/chapter_03/3.3_text/text_demo.dart';
 import 'package:debut_flutter/chapter_03/3.4_button/button_demo.dart';
 import 'package:debut_flutter/chapter_03/3.5_image_and_icon/image_and_icon.dart';
 import 'package:debut_flutter/chapter_03/3.6_switch_and_checkbox/switch_and_checkbox.dart';
+import 'package:debut_flutter/chapter_03/3.7_form/textfield_demo.dart';
+import 'package:debut_flutter/chapter_03/3.7_form/form_demo.dart';
 
 // demos
 import 'package:debut_flutter/demos/01_wechat_reader/reader_navigator.dart';
@@ -31,7 +33,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: _renderSpecifiedHome('chapter_3.6'),
+      home: _renderSpecifiedHome('chapter_3.7_form'),
       // 注册路由表
       // routes: {'/': (context) => _renderSpecifiedHome('chapter_3.3')},
     );
@@ -46,6 +48,8 @@ class MyApp extends StatelessWidget {
    * chapter_3.4               按钮
    * chapter_3.5               图片和icon
    * chapter_3.6               单选开关和复选框
+   * chapter_3.7_textfield     输入框和表单
+   * chapter_3.7_form          表单
    *
    * demo_01_wechat_reader     微信读书简易版示例，导航组件与对应的页面卡片同步切换
    */
@@ -63,6 +67,10 @@ class MyApp extends StatelessWidget {
         return ImageAndIcon();
       case 'chapter_3.6':
         return SwitchAndCheckbox();
+      case 'chapter_3.7_textfield':
+        return TextfieldDemo();
+      case 'chapter_3.7_form':
+        return FormDemo();
       case 'demo_01_wechat_reader':
         return ReaderNavigator();
       default:
