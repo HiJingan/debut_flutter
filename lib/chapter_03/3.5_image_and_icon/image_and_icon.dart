@@ -51,7 +51,7 @@ class ImageAndIcon extends StatelessWidget {
   }
 
   Widget _renderImageList() {
-    var img = AssetImage('images/chapter_03/face-recognition-example.png');
+    var img = AssetImage('assets/images/chapter_03/face-recognition-example.png');
     return Column(
         children: <Image>[
       Image(image: img, height: 50, width: 100, fit: BoxFit.fill),

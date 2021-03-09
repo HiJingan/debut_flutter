@@ -49,7 +49,12 @@ class TextDemo extends StatelessWidget {
                           style: TextStyle(inherit: false, color: Colors.grey),
                         )
                       ],
-                    ))
+                    )),
+                // 自定义字体使用
+                Text(
+                  'custom font family',
+                  style: TextStyle(fontFamily: 'Mighty'),
+                )
               ]),
         ));
   }

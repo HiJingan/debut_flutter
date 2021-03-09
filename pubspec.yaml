@@ -47,7 +47,7 @@ flutter:
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
   assets:
-    - images/chapter_03/face-recognition-example.png
+    - assets/images/chapter_03/face-recognition-example.png
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see
@@ -71,3 +71,7 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  fonts:
+    - family: Mighty
+      fonts:
+        - asset: assets/fonts/Mighty_to_Save.ttf
