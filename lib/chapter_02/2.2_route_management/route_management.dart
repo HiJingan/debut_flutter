@@ -23,9 +23,10 @@ class _RouteManagementState extends State<RouteManagement> {
               style: TextStyle(fontSize: 24),
             ),
             // 跳转到新路由页面按钮
-            FlatButton(
+            TextButton(
               child: Text('打开新页面'),
-              textColor: Colors.blue,
+              style: ButtonStyle(
+                  foregroundColor: MaterialStateProperty.all(Colors.orange)),
               onPressed: () {
                 Navigator.push(
                     context,
@@ -35,10 +36,8 @@ class _RouteManagementState extends State<RouteManagement> {
               },
             ),
             // 非命名路由的传值
-            FlatButton(
-                child: Text('非命名的路由传参'),
-                textColor: Colors.green,
-                onPressed: _jumpToNewPageWithParams)
+            TextButton(
+                child: Text('非命名的路由传参'), onPressed: _jumpToNewPageWithParams)
           ])),
     );
   }

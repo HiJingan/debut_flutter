@@ -42,14 +42,15 @@ class _FormDemoState extends State<FormDemo> {
                     padding: const EdgeInsets.only(top: 24),
                     child: Row(children: <Widget>[
                       Expanded(
-                          child: RaisedButton(
-                        padding: EdgeInsets.all(16),
+                          child: ElevatedButton(
+                        // TODO: RaisedButton 替换为 ElevatedButton后，该如何实现原样式
+                        // padding: EdgeInsets.all(16),
                         child: Text(
                           '提交',
                           style: TextStyle(fontSize: 16),
                         ),
-                        color: Theme.of(context).primaryColor,
-                        textColor: Colors.white,
+                        // color: Theme.of(context).primaryColor,
+                        // textColor: Colors.white,
                         onPressed: () {
                           // 通过_formKey.currentState获取FormState后
                           // 调用validate()方法校验用户名密码是否合法，

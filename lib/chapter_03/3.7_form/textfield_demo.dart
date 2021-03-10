@@ -72,7 +72,7 @@ class _TextfieldDemoState extends State<TextfieldDemo> {
             Builder(
                 builder: (ctx) => (Column(
                       children: <Widget>[
-                        RaisedButton(
+                        ElevatedButton(
                           onPressed: () {
                             // 将焦点从第一个移动到第二个
                             // 第一种写法
@@ -85,7 +85,7 @@ class _TextfieldDemoState extends State<TextfieldDemo> {
                           },
                           child: Text('移动焦点到密码框'),
                         ),
-                        FlatButton(
+                        TextButton(
                             onPressed: () {
                               focusNode1.unfocus();
                               focusNode2.unfocus();

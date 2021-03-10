@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: _renderSpecifiedHome('chapter_3.8'),
+      home: _renderSpecifiedHome('chapter_3.4'),
       // 注册路由表
       // routes: {'/': (context) => _renderSpecifiedHome('chapter_3.3')},
     );

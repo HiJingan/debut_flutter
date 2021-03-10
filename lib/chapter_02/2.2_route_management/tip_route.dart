@@ -14,7 +14,7 @@ class TipRoute extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(text),
-            RaisedButton(
+            ElevatedButton(
               onPressed: () => Navigator.pop(context, '我是pop路由时返回的数据'),
               child: Text('返回'),
             )
