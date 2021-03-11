@@ -1,5 +1,7 @@
-import 'package:debut_flutter/home_page.dart';
 import 'package:flutter/material.dart';
+
+// home
+import 'package:debut_flutter/home_page.dart';
 
 // chapter
 import 'package:debut_flutter/chapter_02/2.1_counter/counter.dart';
@@ -11,6 +13,11 @@ import 'package:debut_flutter/chapter_03/3.6_switch_and_checkbox/switch_and_chec
 import 'package:debut_flutter/chapter_03/3.7_form/textfield_demo.dart';
 import 'package:debut_flutter/chapter_03/3.7_form/form_demo.dart';
 import 'package:debut_flutter/chapter_03/3.8_process_indicator/process_indicator.dart';
+import 'package:debut_flutter/chapter_04/4.2_row_and_column/row_and_column.dart';
+import 'package:debut_flutter/chapter_04/4.3_flex/flex_demo.dart';
+import 'package:debut_flutter/chapter_04/4.4_wrap_and_flow/wrap_and_flow.dart';
+import 'package:debut_flutter/chapter_04/4.5_stack_and_positioned/stack_and_positioned.dart';
+import 'package:debut_flutter/chapter_04/4.6_align/align_demo.dart';
 
 // demos
 import 'package:debut_flutter/demos/01_wechat_reader/reader_navigator.dart';
@@ -26,6 +33,11 @@ final routes = {
   'chapter_03_3_7_textfield': (context) => TextfieldDemo(),
   'chapter_03_3_7_form': (context) => FormDemo(),
   'chapter_03_3_8_process_indicator': (context) => ProcessIndicator(),
+  'chapter_04_4_2_row_and_column': (context) => RowAndColumn(),
+  'chapter_04_4_3_flex': (context) => FlexDemo(),
+  'chapter_04_4_4_wrap_and_flow': (context) => WrapAndFlow(),
+  'chapter_04_4_5_stack_and_positioned': (context) => StackAndPositioned(),
+  'chapter_04_4_6_align': (context) => AlignDemo(),
   'demo_01_wechat_reader': (context) => ReaderNavigator(),
 };
 

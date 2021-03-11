@@ -25,6 +25,20 @@ class HomePageState extends State<HomePage> {
       {'label': '3.7 输入框', 'routeName': 'chapter_03_3_7_textfield'},
       {'label': '3.7 表单', 'routeName': 'chapter_03_3_7_form'},
       {'label': '3.8 进度指示器', 'routeName': 'chapter_03_3_8_process_indicator'},
+      {
+        'label': '4.2 线性布局(Row和Column)',
+        'routeName': 'chapter_04_4_2_row_and_column'
+      },
+      {'label': '4.3 弹性布局(Flex)', 'routeName': 'chapter_04_4_3_flex'},
+      {
+        'label': '4.4 流式布局(Wrap和Flow)',
+        'routeName': 'chapter_04_4_4_wrap_and_flow'
+      },
+      {
+        'label': '4.5 层叠布局(Stack和Positioned)',
+        'routeName': 'chapter_04_4_5_stack_and_positioned'
+      },
+      {'label': '4.6 对齐与相对定位(Align)', 'routeName': 'chapter_04_4_6_align'},
       {'label': 'demo_01 微信读书卡片布局', 'routeName': 'demo_01_wechat_reader'},
     ];
     super.initState();
