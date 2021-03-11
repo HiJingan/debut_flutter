@@ -35,9 +35,11 @@ import 'package:flutter/material.dart';
 class ImageAndIcon extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    String title = ModalRoute.of(context).settings.arguments;
+
     return Scaffold(
         appBar: AppBar(
-          title: Text('图片和icon'),
+          title: Text(title),
         ),
         body: SingleChildScrollView(
             child: Column(

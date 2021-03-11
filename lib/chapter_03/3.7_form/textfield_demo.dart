@@ -40,8 +40,10 @@ class _TextfieldDemoState extends State<TextfieldDemo> {
 
   @override
   Widget build(BuildContext context) {
+    String title = ModalRoute.of(context).settings.arguments;
+
     return Scaffold(
-      appBar: AppBar(title: Text('输入框和表单')),
+      appBar: AppBar(title: Text(title)),
       body: Padding(
         padding: EdgeInsets.all(16),
         child: Column(

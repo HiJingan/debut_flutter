@@ -17,7 +17,7 @@ import 'package:debut_flutter/demos/01_wechat_reader/reader_navigator.dart';
 
 final routes = {
   '/': (context) => HomePage(),
-  'chapter_02_2_1_counter': (context) => Counter(title: 'Debut Flutter'),
+  'chapter_02_2_1_counter': (context) => Counter(),
   'chapter_02_2_2_route_management': (context) => RouteManagement(),
   'chapter_03_3_3_text': (context) => TextDemo(),
   'chapter_03_3_4_button': (context) => ButtonDemo(),

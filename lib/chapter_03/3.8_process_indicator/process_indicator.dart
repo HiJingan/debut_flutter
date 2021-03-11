@@ -30,8 +30,10 @@ class _ProcessIndicatorState extends State<ProcessIndicator>
 
   @override
   Widget build(BuildContext context) {
+    String title = ModalRoute.of(context).settings.arguments;
+
     return Scaffold(
-        appBar: AppBar(title: Text('进度指示器')),
+        appBar: AppBar(title: Text(title)),
         body: Padding(
           padding: EdgeInsets.all(24),
           child: Column(children: <Widget>[

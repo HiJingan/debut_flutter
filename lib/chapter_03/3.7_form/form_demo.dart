@@ -12,8 +12,9 @@ class _FormDemoState extends State<FormDemo> {
 
   @override
   Widget build(BuildContext context) {
+    String title = ModalRoute.of(context).settings.arguments;
     return Scaffold(
-        appBar: AppBar(title: Text('Form表单')),
+        appBar: AppBar(title: Text(title)),
         body: Padding(
           padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 24),
           child: Form(

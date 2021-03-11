@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 class ButtonDemo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    String title = ModalRoute.of(context).settings.arguments;
+
     return Scaffold(
-        appBar: AppBar(title: Text('按钮')),
+        appBar: AppBar(title: Text(title)),
         body: Padding(
             padding: EdgeInsets.all(16),
             child: ListView(children: <Widget>[

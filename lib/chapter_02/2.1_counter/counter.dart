@@ -11,9 +11,6 @@ import 'package:flutter/material.dart';
 // 2. Stateful widget至少由两个类组成：一个StatefulWidget类和一个State类
 
 class Counter extends StatefulWidget {
-  Counter({Key key, this.title}) : super(key: key);
-
-  final String title;
 
   @override
   _CounterState createState() => _CounterState();
@@ -32,9 +29,11 @@ class _CounterState extends State<Counter> {
   // Scaffold是Material库中提供的页面脚手架，提供默认的导航栏、标题、和包含主屏幕的widget树的body属性
   @override
   Widget build(BuildContext context) {
+    String title = ModalRoute.of(context).settings.arguments;
+
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text(title),
       ),
       body: Center(
         child: Column(

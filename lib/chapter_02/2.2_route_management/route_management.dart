@@ -12,8 +12,10 @@ class RouteManagement extends StatefulWidget {
 class _RouteManagementState extends State<RouteManagement> {
   @override
   Widget build(BuildContext context) {
+     // 获取路由参数
+    String title = ModalRoute.of(context).settings.arguments;
     return Scaffold(
-      appBar: AppBar(title: Text('route example')),
+      appBar: AppBar(title: Text(title)),
       body: Center(
           child: Column(
               mainAxisAlignment: MainAxisAlignment.center,

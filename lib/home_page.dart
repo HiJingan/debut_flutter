@@ -46,7 +46,8 @@ class HomePageState extends State<HomePage> {
         new TextButton(
           child: Text(item['label']),
           onPressed: () {
-            Navigator.pushNamed(context, item['routeName']);
+            Navigator.pushNamed(context, item['routeName'],
+                arguments: item['label']);
           },
         )
       ]));

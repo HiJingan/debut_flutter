@@ -13,8 +13,10 @@ class _SwitchAndCheckboxState extends State<SwitchAndCheckbox> {
 
   @override
   Widget build(BuildContext context) {
+    String title = ModalRoute.of(context).settings.arguments;
+
     return Scaffold(
-        appBar: AppBar(title: Text('单选开关和复选框')),
+        appBar: AppBar(title: Text(title)),
         body: Column(children: <Widget>[
           Switch(
               value: _switchSelected,
