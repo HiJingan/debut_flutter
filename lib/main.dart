@@ -1,5 +1,5 @@
+import 'package:debut_flutter/home_page.dart';
 import 'package:flutter/material.dart';
-import 'package:debut_flutter/pages/default_page.dart';
 
 // chapter
 import 'package:debut_flutter/chapter_02/2.1_counter/counter.dart';
@@ -15,6 +15,20 @@ import 'package:debut_flutter/chapter_03/3.8_process_indicator/process_indicator
 // demos
 import 'package:debut_flutter/demos/01_wechat_reader/reader_navigator.dart';
 
+final routes = {
+  '/': (context) => HomePage(),
+  'chapter_02_2_1_counter': (context) => Counter(title: 'Debut Flutter'),
+  'chapter_02_2_2_route_management': (context) => RouteManagement(),
+  'chapter_03_3_3_text': (context) => TextDemo(),
+  'chapter_03_3_4_button': (context) => ButtonDemo(),
+  'chapter_03_3_5_image_and_icon': (context) => ImageAndIcon(),
+  'chapter_03_3_6_switch_and_checkbox': (context) => SwitchAndCheckbox(),
+  'chapter_03_3_7_textfield': (context) => TextfieldDemo(),
+  'chapter_03_3_7_form': (context) => FormDemo(),
+  'chapter_03_3_8_process_indicator': (context) => ProcessIndicator(),
+  'demo_01_wechat_reader': (context) => ReaderNavigator(),
+};
+
 // 应用入口
 // Flutter应用中使用main函数作为程序的入口
 // runApp方法功能是启动Flutter应用，它接受一个Widget参数
@@ -28,57 +42,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Debut Flutter',
-      // initialRoute: "/",
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: _renderSpecifiedHome('chapter_3.4'),
-      // 注册路由表
-      // routes: {'/': (context) => _renderSpecifiedHome('chapter_3.3')},
-    );
-  }
-
-  /*
-   * 渲染指定的首页
-   *
-   * chapter_2.1               Flutter官方第一个示例，计数器
-   * chapter_2.2               路由管理
-   * chapter_3.3               文本及样式
-   * chapter_3.4               按钮
-   * chapter_3.5               图片和icon
-   * chapter_3.6               单选开关和复选框
-   * chapter_3.7_textfield     输入框
-   * chapter_3.7_form          表单
-   * chapter_3.8               进度指示器
-   *`
-   * demo_01_wechat_reader     微信读书简易版示例，导航组件与对应的页面卡片同步切换
-   */
-  _renderSpecifiedHome(String chapter) {
-    switch (chapter) {
-      case 'chapter_2.1':
-        return Counter(title: 'Debut Flutter');
-      case 'chapter_2.2':
-        return RouteManagement();
-      case 'chapter_3.3':
-        return TextDemo();
-      case 'chapter_3.4':
-        return ButtonDemo();
-      case 'chapter_3.5':
-        return ImageAndIcon();
-      case 'chapter_3.6':
-        return SwitchAndCheckbox();
-      case 'chapter_3.7_textfield':
-        return TextfieldDemo();
-      case 'chapter_3.7_form':
-        return FormDemo();
-      case 'chapter_3.8':
-        return ProcessIndicator();
-      case 'demo_01_wechat_reader':
-        return ReaderNavigator();
-      default:
-        return DefaultPage();
-    }
+        title: 'Debut Flutter',
+        initialRoute: "/",
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+        ),
+        // 注册路由表
+        routes: routes);
   }
 }
