@@ -39,6 +39,29 @@ class HomePageState extends State<HomePage> {
         'routeName': 'chapter_04_4_5_stack_and_positioned'
       },
       {'label': '4.6 对齐与相对定位(Align)', 'routeName': 'chapter_04_4_6_align'},
+      {'label': '5.1 填充(Padding)', 'routeName': 'chapter_05_5_1_padding'},
+      {
+        'label': '5.2 尺寸限制类容器',
+        'routeName': 'chapter_05_5_2_restricted_container'
+      },
+      {
+        'label': '5.3 装饰容器(DecoratedBox)',
+        'routeName': 'chapter_05_5_3_decorated_box'
+      },
+      {'label': '5.4 变换(Transfrom)', 'routeName': 'chapter_05_5_4_transform'},
+      {'label': '5.5 Container', 'routeName': 'chapter_05_5_5_container'},
+      {
+        'label': '5.6 首页框架01',
+        'routeName': 'chapter_05_5_6_home_bar_01',
+      },
+      {
+        'label': '5.6 首页框架02',
+        'routeName': 'chapter_05_5_6_home_bar_02',
+      },
+      {
+        'label': '5.7 剪裁(Clip)',
+        'routeName': 'chapter_05_5_7_clip'
+      },
       {'label': 'demo_01 微信读书卡片布局', 'routeName': 'demo_01_wechat_reader'},
     ];
     super.initState();
@@ -48,7 +71,9 @@ class HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(title: Text('首页')),
-        body: SingleChildScrollView(child: _renderList()));
+        body: SingleChildScrollView(
+            padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 16),
+            child: _renderList()));
   }
 
   Widget _renderList() {

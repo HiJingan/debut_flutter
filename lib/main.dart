@@ -18,6 +18,14 @@ import 'package:debut_flutter/chapter_04/4.3_flex/flex_demo.dart';
 import 'package:debut_flutter/chapter_04/4.4_wrap_and_flow/wrap_and_flow.dart';
 import 'package:debut_flutter/chapter_04/4.5_stack_and_positioned/stack_and_positioned.dart';
 import 'package:debut_flutter/chapter_04/4.6_align/align_demo.dart';
+import 'package:debut_flutter/chapter_05/5.1_padding/padding_demo.dart';
+import 'package:debut_flutter/chapter_05/5.2_restricted_container/restricted_container.dart';
+import 'package:debut_flutter/chapter_05/5.3_decorated_box/decorated_box_demo.dart';
+import 'package:debut_flutter/chapter_05/5.4_transform/transfrom_demo.dart';
+import 'package:debut_flutter/chapter_05/5.5_container/container_demo.dart';
+import 'package:debut_flutter/chapter_05/5.6_bar/home_page_01.dart';
+import 'package:debut_flutter/chapter_05/5.6_bar/home_page_02.dart';
+import 'package:debut_flutter/chapter_05/5.7_clip/clip_demo.dart';
 
 // demos
 import 'package:debut_flutter/demos/01_wechat_reader/reader_navigator.dart';
@@ -38,6 +46,14 @@ final routes = {
   'chapter_04_4_4_wrap_and_flow': (context) => WrapAndFlow(),
   'chapter_04_4_5_stack_and_positioned': (context) => StackAndPositioned(),
   'chapter_04_4_6_align': (context) => AlignDemo(),
+  'chapter_05_5_1_padding': (context) => PaddingDemo(),
+  'chapter_05_5_2_restricted_container': (context) => RestrictedContainer(),
+  'chapter_05_5_3_decorated_box': (context) => DecoratedBoxDemo(),
+  'chapter_05_5_4_transform': (context) => TransfromDemo(),
+  'chapter_05_5_5_container': (context) => ContainerDemo(),
+  'chapter_05_5_6_home_bar_01': (context) => HomePage01(),
+  'chapter_05_5_6_home_bar_02': (context) => HomePage02(),
+  'chapter_05_5_7_clip': (context) => ClipDemo(),
   'demo_01_wechat_reader': (context) => ReaderNavigator(),
 };
 
