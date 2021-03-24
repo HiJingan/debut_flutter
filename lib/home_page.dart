@@ -58,10 +58,22 @@ class HomePageState extends State<HomePage> {
         'label': '5.6 首页框架02',
         'routeName': 'chapter_05_5_6_home_bar_02',
       },
+      {'label': '5.7 剪裁(Clip)', 'routeName': 'chapter_05_5_7_clip'},
       {
-        'label': '5.7 剪裁(Clip)',
-        'routeName': 'chapter_05_5_7_clip'
+        'label': '6.2 SingleChildScrollView',
+        'routeName': 'chapter_06_6_2_single_child_scroll_view'
       },
+      {'label': '6.3 ListView', 'routeName': 'chapter_06_6_3_list_view'},
+      {
+        'label': '6.3 ListView 上拉加载更多',
+        'routeName': 'chapter_06_6_3_list_view_loading'
+      },
+      {'label': '6.4 GridView', 'routeName': 'chapter_06_6_4_grid_view'},
+      {
+        'label': '6.5 CustomScrollView',
+        'routeName': 'chapter_06_6_5_custom_scroll_view'
+      },
+      {'label': '6.6 滚动控制', 'routeName': 'chaptre_06_6_6_scroll_controller'},
       {'label': 'demo_01 微信读书卡片布局', 'routeName': 'demo_01_wechat_reader'},
     ];
     super.initState();

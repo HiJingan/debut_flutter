@@ -26,6 +26,12 @@ import 'package:debut_flutter/chapter_05/5.5_container/container_demo.dart';
 import 'package:debut_flutter/chapter_05/5.6_bar/home_page_01.dart';
 import 'package:debut_flutter/chapter_05/5.6_bar/home_page_02.dart';
 import 'package:debut_flutter/chapter_05/5.7_clip/clip_demo.dart';
+import 'package:debut_flutter/chapter_06/6.2_single_child_scroll_view/single_child_scroll_view_demo.dart';
+import 'package:debut_flutter/chapter_06/6.3_list_view/list_view_demo.dart';
+import 'package:debut_flutter/chapter_06/6.3_list_view/list_view_loading.dart';
+import 'package:debut_flutter/chapter_06/6.4_grid_view/grid_view_demo.dart';
+import 'package:debut_flutter/chapter_06/6.6_scroll_controller/scroll_controller_demo.dart';
+import 'package:debut_flutter/chapter_06/6.5_custom_scroll_view/custom_scroll_view_demo.dart';
 
 // demos
 import 'package:debut_flutter/demos/01_wechat_reader/reader_navigator.dart';
@@ -54,6 +60,13 @@ final routes = {
   'chapter_05_5_6_home_bar_01': (context) => HomePage01(),
   'chapter_05_5_6_home_bar_02': (context) => HomePage02(),
   'chapter_05_5_7_clip': (context) => ClipDemo(),
+  'chapter_06_6_2_single_child_scroll_view': (context) =>
+      SingleChildScrollViewDemo(),
+  'chapter_06_6_3_list_view': (context) => ListViewDemo(),
+  'chapter_06_6_3_list_view_loading': (context) => ListViewLoading(),
+  'chapter_06_6_4_grid_view': (context) => GradViewDemo(),
+  'chapter_06_6_5_custom_scroll_view': (context) => CustomScrollViewDemo(),
+  'chaptre_06_6_6_scroll_controller': (context) => ScrollControllerDemo(),
   'demo_01_wechat_reader': (context) => ReaderNavigator(),
 };
 
